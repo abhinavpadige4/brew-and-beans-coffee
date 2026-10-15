@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew & Beans — a neighborhood coffee shop serving single-origin espresso, hand-poured brews, and warm pastries since 2014." />
+  <title>Brew &amp; Beans — Neighborhood Coffee Shop</title>
+
+  <!-- Google Fonts: Playfair Display (headings) + Lato (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">☕</span>
+        <span class="brand-name">Brew <em>&amp;</em> Beans</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#visit" class="nav-link">Visit</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Order Ahead</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow reveal">Est. 2014 · Single-Origin Roasters</p>
+      <h1 class="hero-title reveal">
+        Slow mornings,<br />
+        <em>bold</em> coffee.
+      </h1>
+      <p class="hero-sub reveal">
+        Small-batch beans, hand-poured brews, and a corner seat that feels like home.
+        Come for the caffeine — stay for the conversation.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+        <a href="#visit" class="btn btn-ghost">Find Us</a>
+      </div>
+      <div class="hero-meta reveal">
+        <div><strong>7:00</strong><span>Open daily</span></div>
+        <div><strong>4.9★</strong><span>1,200+ reviews</span></div>
+        <div><strong>12</strong><span>Single origins</span></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container grid-2">
+      <div class="about-media reveal">
+        <img
+          src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80"
+          alt="Barista pouring latte art into a ceramic cup"
+          loading="lazy"
+        />
+        <div class="about-badge">
+          <span class="badge-num">10+</span>
+          <span class="badge-text">Years of<br />craft</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow reveal">Our Story</p>
+        <h2 class="section-title reveal">A neighborhood roastery, <em>brewed with care.</em></h2>
+        <p class="reveal">
+          Brew &amp; Beans began as a two-chair cart on Maple Street. A decade later we still
+          roast in-house every Tuesday, still greet regulars by name, and still believe the
+          best coffee is shared slowly.
+        </p>
+        <p class="reveal">
+          Our beans travel from family farms in Ethiopia, Colombia, and Guatemala to our
+          roaster — never more than 14 days before they hit your cup.
+        </p>
+        <ul class="about-list reveal">
+          <li><span>◆</span> Direct-trade sourcing from 8 farms</li>
+          <li><span>◆</span> Roasted fresh every Tuesday</li>
+          <li><span>◆</span> 100% compostable cups &amp; lids</li>
+        </ul>
+        <a href="#menu" class="btn btn-primary reveal">See what's brewing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">The Menu</p>
+        <h2 class="section-title reveal">Brewed, poured, <em>and pressed.</em></h2>
+        <p class="section-lead reveal">
+          Everything is made to order. Ask your barista about today's single origin.
+        </p>
+      </div>
+
+      <div class="menu-tabs reveal" role="tablist">
+        <button class="tab active" data-tab="espresso" role="tab">Espresso</button>
+        <button class="tab" data-tab="brew" role="tab">Slow Brew</button>
+        <button class="tab" data-tab="pastries" role="tab">Pastries</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card reveal" data-cat="espresso">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e63d?auto=format&fit=crop&w=800&q=80" alt="Double espresso" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Double Espresso</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Our house blend — dark chocolate, dried cherry, a whisper of smoke.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="espresso">
+          <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Cappuccino with latte art" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Cappuccino</h3>
+              <span class="price">$4.75</span>
+            </div>
+            <p>Equal parts espresso, steamed milk, and airy foam. Dusted with cocoa.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="espresso">
+          <img src="https://images.unsplash.com/photo-1570968912871-27a0073790aa?auto=format&fit=crop&w=800&q=80" alt="Caramel latte" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Caramel Latte</h3>
+              <span class="price">$5.25</span>
+            </div>
+            <p>House-made caramel, oat milk optional. Our most-ordered drink.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="brew">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Pour-over coffee" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Pour-Over</h3>
+              <span class="price">$5.00</span>
+            </div>
+            <p>Rotating single origin, brewed to order. Ask what's on the bar today.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="brew">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba0dba5?auto=format&fit=crop&w=800&q=80" alt="Cold brew in a glass" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Cold Brew</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p>Steeped 18 hours. Smooth, chocolatey, and dangerously drinkable.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="brew">
+          <img src="https://images.unsplash.com/photo-15174573739c8-f64b1c8a7e77?auto=format&fit=crop&w=800&q=80" alt="Iced matcha latte" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Matcha Latte</h3>
+              <span class="price">$5.50</span>
+            </div>
+            <p>Ceremonial-grade matcha whisked with your choice of milk.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="pastries">
+          <img src="https://images.unsplash.com/photo-1555503081-9d65c6c1e49b?auto=format&fit=crop&w=800&q=80" alt="Butter croissant" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Butter Croissant</h3>
+              <span class="price">$3.25</span>
+            </div>
+            <p>72-hour laminated dough, baked at dawn. Flaky, golden, gone by 10am.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="pastries">
+          <img src="https://images.unsplash.com/photo-1509365465985-25d1edc0608e?auto=format&fit=crop&w=800&q=80" alt="Blueberry muffin" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Blueberry Muffin</h3>
+              <span class="price">$3.75</span>
+            </div>
+            <p>Bursting with wild blueberries and a streusel crown.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="pastries">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d4ad05?auto=format&fit=crop&w=800&q=80" alt="Cinnamon roll" loading="lazy" />
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Cinnamon Roll</h3>
+              <span class="price">$4.50</span>
+            </div>
+            <p>Warm, gooey, and topped with cream-cheese frosting. Best with a latte.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Gallery</p>
+        <h2 class="section-title reveal">A room that <em>smells like home.</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-item g-tall reveal">
+          <img src="https://images.unsplash.com/photo-1554118811-93e0b3f7e6c5?auto=format&fit=crop&w=900&q=80" alt="Cozy cafe interior with warm lighting" loading="lazy" />
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80" alt="Espresso machine pulling a shot" loading="lazy" />
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6b57f14ac2f?auto=format&fit=crop&w=900&q=80" alt="Coffee beans being roasted" loading="lazy" />
+        </figure>
+        <figure class="g-item g-tall reveal">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=80" alt="Latte on a wooden table" loading="lazy" />
+        </figure>
+        <figure class="g-item reveal">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d76b817?auto=format&fit=crop&w=900&q=80" alt="Barista at work" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT / HOURS ============ -->
+  <section class="section visit" id="visit">
+    <div class="container grid-2">
+      <div class="visit-copy">
+        <p class="eyebrow reveal">Visit Us</p>
+        <h2 class="section-title reveal">Come say <em>hello.</em></h2>
+        <p class="reveal">
+          We're on the corner of Maple &amp; 5th — look for the green awning and the
+          smell of fresh-roasted beans.
+        </p>
+
+        <div class="hours reveal">
+          <div class="hours-row"><span>Mon – Fri</span><span>7:00 – 19:00</span></div>
+          <div class="hours-row"><span>Saturday</span><span>8:00 – 20:00</span></div>
+          <div class="hours-row"><span>Sunday</span><span>8:00 – 17:00</span></div>
+        </div>
+
+        <div class="visit-actions reveal">
+          <a href="#contact" class="btn btn-primary">Order Ahead</a>
+          <a href="https://maps.google.com/?q=coffee+shop" target="_blank" rel="noopener" class="btn btn-ghost">Get Directions</a>
+        </div>
+      </div>
+
+      <div class="visit-map reveal">
+        <img
+          src="https://images.unsplash.com/photo-1554118811-93e0b3f7e6c5?auto=format&fit=crop&w=1000&q=80"
+          alt="Cafe storefront at dusk"
+          loading="lazy"
+        />
+        <div class="map-pin">
+          <span class="pin-dot"></span>
+          <span class="pin-label">142 Maple St</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / ORDER AHEAD ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal">Order Ahead</p>
+        <h2 class="section-title reveal">Skip the line. <em>We'll have it ready.</em></h2>
+      </div>
+
+      <form class="order-form reveal" id="orderForm" novalidate>
+        <div class="form-row">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your name" />
+          </label>
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" required placeholder="(555) 123-4567" />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Order</span>
+            <select name="order" required>
+              <option value="">Choose a drink…</option>
+              <option>Double Espresso</option>
+              <option>Cappuccino</option>
+              <option>Caramel Latte</option>
+              <option>Pour-Over</option>
+              <option>Cold Brew</option>
+              <option>Matcha Latte</option>
+            </select>
+          </label>
+          <label>
+            <span>Pickup time</span>
+            <input type="time" name="time" required />
+          </label>
+        </div>
+        <label class="form-full">
+          <span>Notes (optional)</span>
+          <textarea name="notes" rows="3" placeholder="Oat milk, extra shot, less sweet…"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">☕</span>
+          <span class="brand-name">Brew <em>&amp;</em> Beans</span>
+        </a>
+        <p class="footer-tag">Slow mornings, bold coffee.<br />Roasted fresh every Tuesday.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>142 Maple Street</li>
+          <li>Portland, OR 97201</li>
+          <li>(555) 014-2014</li>
+          <li>hello@brewandbeans.coffee</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Brew &amp; Beans Coffee Co. — Crafted with care.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
